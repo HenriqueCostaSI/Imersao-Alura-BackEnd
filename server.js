@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.listen(3000, () => {
-    console.log("Servidor escutando...");
+    console.log("Servidor executando na porta http://localhost:3000");
 });
 
 app.get("/posts", (req, res) => {
