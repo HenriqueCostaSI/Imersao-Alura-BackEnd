@@ -28,7 +28,9 @@
     "test": ""
   },
   "dependencies": {
+    "20": "^1.0.0",
+    "": "file:",
     "express": "^4.21.1",
-    "mongodb": "^6.11.0"
+    "mongodb": "^6.10.0"
   }
 }

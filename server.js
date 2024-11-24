@@ -1,6 +1,6 @@
 import express from "express";
 
-console.log(process.env.STRING_CONNECTION);
+console.log(process.env.CONNECTIONSTRING);
 
 const posts = [
     { id: 1, descricao: "Uma foto teste", imagem: "https://placecats.com/millie/300/150" },
