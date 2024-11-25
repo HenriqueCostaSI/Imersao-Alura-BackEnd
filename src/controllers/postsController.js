@@ -1,4 +1,3 @@
-import { atualizarPost } from "../models/postsModel.js";
 import {getTodosPosts, criarPost, atualizarPost} from "../models/postsModel.js";
 import fs from "fs";
 

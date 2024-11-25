@@ -31,7 +31,7 @@ const routes = (app) => {
   // Rota para upload de imagens (assumindo uma única imagem chamada "imagem")
   app.post("/upload", upload.single("imagem"), uploadImagem); // Chama a função controladora para processamento da imagem
 
-  app.put("/upload/:id", atualizaNovoPost);
+  app.put("/upload/:id", atualizarNovoPost);
 };
 
 export default routes;
