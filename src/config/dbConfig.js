@@ -1,7 +1,9 @@
 import { MongoClient } from 'mongodb';
+import dotenv from 'dotenv';
 
 export default async function conectarAoBanco(CONNECTIONSTRING) {
     let mongoClient;
+    dotenv.config();
 
     try {
         mongoClient = new MongoClient(CONNECTIONSTRING);
