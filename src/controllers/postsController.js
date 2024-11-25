@@ -20,3 +20,19 @@ export async function postarNovoPost(req, res){
     
 }
 
+
+export async function uploadImagem(req, res){
+    const novoPost = req.body;
+    try{
+        const postCriado = await criarPost(novoPost);
+        res.status(201).json(postCriado);
+
+    }
+    catch(erro){
+        console.log(erro.message);
+        res.status(500).json({message: "Erro ao criar post"});
+    }
+    
+}
+
+
